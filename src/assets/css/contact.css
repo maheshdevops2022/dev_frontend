@@ -1,0 +1,102 @@
+/* Fix dropdown background */
+.custom-select {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  border: 1px solid #ccc;
+}
+
+/* Fix focus issue */
+.custom-select:focus {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  outline: none;
+}
+
+/* Optional: modern look */
+.custom-select {
+  border-radius: 6px;
+  padding: 10px;
+  appearance: none;
+}
+
+/* Fix arrow visibility */
+select.custom-select {
+  background-image: none;
+}
+.nice-select {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.nice-select .list {
+  background-color: #fff !important;
+}
+
+.nice-select .option:hover {
+  background-color: #f1f1f1 !important;
+}
+select.form-control {
+  color: black;
+}
+
+select.form-control option {
+  color: black;
+}
+/* Wrapper for positioning */
+.select-wrapper {
+  position: relative;
+}
+
+/* Style select */
+.custom-select {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* space for icon */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  appearance: none; /* remove default arrow */
+}
+
+/* Icon positioning */
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none; /* click passes through */
+  color: #555;
+}
+
+/* Optional hover */
+.select-wrapper:hover .select-icon {
+  color: #000;
+}
+/* Wrapper for positioning */
+.select-wrapper {
+  position: relative;
+}
+
+/* Style select */
+.custom-select {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* space for icon */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  appearance: none; /* remove default arrow */
+}
+
+/* Icon positioning */
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none; /* click passes through */
+  color: #555;
+}
+
+/* Optional hover */
+.select-wrapper:hover .select-icon {
+  color: #000;
+}

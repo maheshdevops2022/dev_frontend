@@ -1,0 +1,400 @@
+/* =========================
+   MOBILE SIDE MENU
+========================= */
+
+/* Main menu */
+.mobile-side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 999999;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Open state */
+.mobile-side-menu.open {
+  transform: translateX(0);
+}
+
+/* Close button */
+.mobile-side-menu-close {
+  background: none;
+  border: none;
+  font-size: 22px;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Menu list */
+/* .mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* text-decoration: underline; */
+/* } */
+
+/* .mobile-menu-list li {
+  margin: 15px 0;
+  text-decoration: underline;
+
+}
+
+.mobile-menu-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+.mobile-menu-list li a:hover {
+  color: #07a698; */
+/* } */ 
+
+/* Menu list */
+.mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each item */
+.mobile-menu-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;   /* 🔥 full underline */
+}
+
+/* gap between items */
+.mobile-menu-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* links */
+.mobile-menu-list li a,
+.menu-title {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+/* hover effect (optional) */
+.mobile-menu-list li a:hover {
+  color: #07a698;
+}
+
+/* =========================
+   ADDRESS SECTION
+========================= */
+
+/* Default hide (desktop lo hide) */
+.mobile-address {
+  display: none;
+}
+
+/* Mobile lo matrame show */
+@media (max-width: 992px) {
+  .mobile-address {
+    display: block;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+}
+
+.mobile-address p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #333;
+}
+
+.mobile-address i {
+  color: #07a698;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.mobile-address a {
+  color: #000;
+  text-decoration: none;
+}
+
+.mobile-address a:hover {
+  color: #07a698;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.mobile-side-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 99999;
+}
+
+.mobile-side-menu-overlay.show {
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE CONTROL
+========================= */
+
+/* Desktop lo mobile menu hide */
+@media (min-width: 993px) {
+  .mobile-side-menu {
+    display: none !important;
+  }
+
+  .mobile-side-menu-overlay {
+    display: none !important;
+  }
+}
+
+/* Dropdown header */
+/* Title row */
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 0;
+  color: #000 !important;
+
+}
+/* .menu-title.active {
+  color: #07a698 !important;
+} */
+/* Icon box */
+/* icon box */
+.icon-box {
+  width: 28px;
+  height: 28px;
+  background-color: #07A698;
+  border: 1px solid #07A698;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: 0.3s;
+  color: #000;
+}
+
+/* only icon changes */
+.icon-box.open {
+  background-color: #07A698;
+  color: #fff;
+  /* border-color: #07a698; */
+}
+.mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu-list li {
+  border-bottom: 1px solid #ddd;   /* underline */
+}
+
+.mobile-menu-list li a,
+.menu-title {
+  display: block;
+  padding: 12px 15px;   /* gap */
+  text-decoration: none;
+  color: #000;
+}
+
+/* submenu */
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.submenu li {
+  border-bottom: 1px solid #eee;
+}
+
+.submenu li a {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+/* + - icon color change */
+.icon-box {
+  color: black;
+  font-weight: bold;
+}
+
+.icon-box.open {
+  color: red;   /* click ayyaka change */
+}
+.mobile-side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  z-index: 999999;
+  transition: 0.4s ease;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* OPEN */
+.mobile-side-menu.open {
+  right: 0;
+}
+
+/* CLOSE BUTTON */
+.mobile-side-menu-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 50px 0 0 0; /* top gap for close button */
+  margin: 0;
+}
+
+.mobile-menu-list li {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd; /* full underline */
+}
+
+/* links */
+.mobile-menu-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-box {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #07a698;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* ACTIVE ONLY icon color change */
+.icon-box.open {
+  background: #07a698;
+  color: #fff;
+}
+
+
+.icon-box {
+  width: 24px;
+  height: 24px;
+}
+ 
+
+
+.menu-dropdown ul {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.menu-dropdown ul li {
+  padding: 8px 0;
+  /* border-bottom: 1px dashed #ccc; */
+}
+
+.menu-dropdown ul li a {
+  font-size: 14px;
+}
+
+.mobile-menu-list ul li:last-child {
+  border-bottom: none;
+}
+/* Overlay background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup box */
+.popup-box {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Close button (top right) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Inputs */
+.popup-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,131 @@
+@import './animate.min.css';
+@import './bootstrap.min.css';
+@import './carouselTicker.css';
+@import './daterangepicker.css';
+@import './fontawesome.min.css';
+@import './keyframe-animation.css';
+@import './main.css';
+@import './nice-select.css';
+@import './odometer.min.css';
+@import './popup.css';
+@import './swiper.min.css';
+@import './venobox.min.css';
+@import './privacy-policy.css';
+@import './Partnership.css';
+@import './contact.css';
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 80px; /* adjust if WhatsApp button exists */
+  width: 50px;
+  height: 50px;
+  background-color: #ff3131;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #cc0000;
+}
+.finopscourse
+{
+  font-size:24px;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.submit-btn-download {
+  width: 100%;
+  padding: 10px;
+  background: #ff3131 ;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.demo-btn
+{
+  background-color: #ff3131 ;
+}
+.blog-contact-form .form-control::placeholder {
+  color: #000 !important;
+  opacity: 1;
+}
+
+.fa-bars:before, .fa-navicon:before {
+    color: #ff3131 !important;
+}
+.about-counter-item .title span {
+  white-space: nowrap;
+  font-size: 26px; 
+}
+.white-placeholder::placeholder {
+  color: #fff;
+}
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+.section-bg {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
