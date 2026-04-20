@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/bg-image2.jpeg";
+import img from "../assets/img/bg-image2.png";
 import "../assets/css/all.css";
 
 const Learn = () => {
@@ -11,12 +11,12 @@ const Learn = () => {
         <div className="cta-content cta-content-3 text-center">
           <div className="section-heading text-center white-content mb-20">
             <h2 className="section-title mt-10 wow fade-in-bottom" data-wow-delay="400ms">
-              Dev Infotech – Connect. Engage. Grow.
+              Dev Infotechs – Connect. Engage. Grow.
             </h2>
           </div>
 
           <p className="wow fade-in-bottom" data-wow-delay="500ms">
-            At Dev Infotech, we empower businesses with powerful SMS and WhatsApp messaging
+            At Dev Infotechs, we empower businesses with powerful SMS and WhatsApp messaging
             solutions. <br />
             Send bulk messages, share images & videos, and engage your customers with interactive
             polls — all in one platform.

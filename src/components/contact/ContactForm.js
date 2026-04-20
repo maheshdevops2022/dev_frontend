@@ -6,7 +6,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    service: "",
     message: "",
   });
 
@@ -25,7 +25,7 @@ const ContactForm = () => {
     if (!formData.email) return "Email is required";
     if (!/\S+@\S+\.\S+/.test(formData.email)) return "Invalid email";
     if (!formData.phone) return "Phone is required";
-    if (!formData.subject) return "Please select a course";
+    if (!formData.service) return "Please select a course";
     if (!formData.message) return "Message is required";
     return null;
   };
@@ -65,7 +65,7 @@ const ContactForm = () => {
       name: "",
       email: "",
       phone: "",
-      subject: "",
+      service: "",
       message: "",
     });
 
@@ -145,9 +145,9 @@ const ContactForm = () => {
             <div className="col-md-6">
               <div className="form-item" style={{ position: "relative" }}>
                 <select
-                  name="subject"
+                  name="service"
                   className="form-control"
-                  value={formData.subject}
+                  value={formData.service}
                   onChange={handleChange}
                   style={{
                     color: "#fff", // typed text black
@@ -157,15 +157,12 @@ const ContactForm = () => {
                     paddingRight: "30px", // space for arrow
                   }}
                 >
-                  <option value="">Select Training</option>
-                  <option value="DevOps">DevOps</option>
-                  {/* <option value="Python">Python</option> */}
-                  {/* <option value="Data Science">Data Science</option> */}
-                  <option value="Data Analytics">Data Analytics</option>
-                  {/* <option value="Azure DevOps">Azure DevOps</option> */}
-                  {/* <option value="Power BI">Power BI</option> */}
-                  <option value="FinOps">FinOps</option>
-                  {/* <option value="Other">Other</option> */}
+                  <option value="">Select Services</option>
+                  <option value="any">Any other services</option>
+                  <option value="Images">Images</option>
+                  <option value="Poll Message">Poll Message</option>
+                  <option value="Video Messaging">Video Messaging</option>
+                  <option value="SMS">SMS Services</option>
                 </select>
 
                 {/* Custom white arrow */}

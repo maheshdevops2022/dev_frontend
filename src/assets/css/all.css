@@ -19,7 +19,7 @@
   bottom: 80px; /* adjust if WhatsApp button exists */
   width: 50px;
   height: 50px;
-  background-color: #ff3131;
+  background-color: #05db50;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -34,7 +34,7 @@
 }
 
 .scroll-to-top:hover {
-  background-color: #cc0000;
+  background-color: #05db50;
 }
 .finopscourse
 {
@@ -73,7 +73,7 @@
 .submit-btn-download {
   width: 100%;
   padding: 10px;
-  background: #ff3131 ;
+  background: #098dd3 ;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -91,7 +91,7 @@
 }
 .demo-btn
 {
-  background-color: #ff3131 ;
+  background-color: #31ff38 ;
 }
 .blog-contact-form .form-control::placeholder {
   color: #000 !important;
@@ -99,7 +99,7 @@
 }
 
 .fa-bars:before, .fa-navicon:before {
-    color: #ff3131 !important;
+    color: green !important;
 }
 .about-counter-item .title span {
   white-space: nowrap;

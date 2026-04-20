@@ -4,11 +4,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ContactSection from "./components/contact/ContactSection";
 import DevOpsPage from "./components/seo/devops/DevOpsPage";
 import "./assets/css/all.css";
+import "./min.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import img1 from "./assets/img/services/devops3.jpg";
-import img2 from "./assets/img/services/devops1.jpg";
+import img2 from "./assets/img/services/devops1.png";
 import img3 from "./assets/img/services/devops2.jpeg";
 import img4 from "./assets/img/icons/icon23.png";
 import img5 from "./assets/img/icons/icon24.png";
@@ -20,8 +21,8 @@ import icon19 from "./assets/img/icons/icon19.png";
 import icon20 from "./assets/img/icons/icon20.png";
 import icon21 from "./assets/img/icons/icon21.png";
 import icon22 from "./assets/img/icons/icon22.png";
-import bgImage from "./assets/img/bg-image2.jpeg";
-const DevOpsTraining = () => {
+import bgImage from "./assets/img/bg-image2.png";
+const WhatsappSms = () => {
   const [showBtn, setShowBtn] = useState(false);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ const DevOpsTraining = () => {
   return (
     <>
       {/* <Header /> */}
-      <DevOpsPage/>
+      <DevOpsPage />
       {/* Page Header */}
       <section className="page-header">
         <div className="bg-item">
@@ -57,7 +58,7 @@ const DevOpsTraining = () => {
 
         <div className="container">
           <div className="page-header-content">
-            <h1 className="title text-center">DevOps Training in Hyderabad</h1>
+            <h1 className="title text-center"> WhatsApp & SMS Services at Dev Infotechs</h1>
           </div>
         </div>
       </section>
@@ -85,22 +86,20 @@ const DevOpsTraining = () => {
               <div className="about-content-3">
                 <div className="section-heading mb-20">
                   <h2 className="section-title">
-                    Master DevOps and Accelerate Your IT Career
+                    Boost Your Business with WhatsApp & SMS Services
                   </h2>
                 </div>
 
                 <p className="mb-30">
-                  At RR Technosoft, our DevOps training in Hyderabad prepares
-                  you to become a highly skilled DevOps Engineer. Learn CI/CD,
-                  Docker, Kubernetes, AWS, and automation tools with real-time
-                  projects. This job-oriented course is ideal for freshers,
-                  system administrators, cloud engineers, and IT professionals.
+                  At Dev Infotechs, we provide powerful WhatsApp API and SMS services to help
+                  businesses connect with customers instantly. Send bulk messages, automate
+                  responses, and manage campaigns with ease. Our solutions are perfect for
+                  marketing, customer support, and transactional messaging.
                 </p>
 
                 <div className="about-btn">
                   <a href="/contact-us" className="ed-primary-btn">
-                    Enroll in DevOps Training{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
+                    Enroll in DevOps Training <i className="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -117,28 +116,64 @@ const DevOpsTraining = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-content-18">
                 <div className="section-heading mb-20">
-                  <h2 className="section-title">Why Choose DevOps?</h2>
+                  <h2 className="section-title"> Why Choose WhatsApp & SMS Services?</h2>
                 </div>
 
                 <p>
-                  DevOps is one of the fastest-growing fields in IT, with
-                  high-paying roles and global demand. By mastering DevOps, you
-                  can:
+                  WhatsApp and SMS marketing are the most effective ways to reach customers
+                  instantly and increase engagement.
                 </p>
-
                 <ul className="about-list">
                   <li>
-                    <span>01</span> Speed up software delivery with automation.
+                    <span>01</span> Deliver instant communication at scale using SMS and WhatsApp
+                    services with high open rates, ensuring faster reach and improved customer
+                    response.
+                  </li>
+
+                  <li>
+                    <span>02</span> Elevate customer engagement by sharing rich media content
+                    including high-quality images and videos, making your campaigns more impactful
+                    and visually appealing.
+                  </li>
+
+                  <li>
+                    <span>03</span> Simplify document sharing by sending PDFs such as invoices,
+                    tickets, and reports directly to customers in a secure and organized manner.
+                  </li>
+
+                  <li>
+                    <span>04</span> Leverage automation and API-based messaging to send OTPs,
+                    alerts, reminders, and marketing campaigns seamlessly without manual
+                    intervention.
+                  </li>
+
+                  <li>
+                    <span>05</span> Build stronger customer relationships through personalized,
+                    real-time, and multi-channel communication that drives engagement and business
+                    growth.
                   </li>
                   <li>
-                    <span>02</span> Improve collaboration between development
-                    and operations teams.
+                    <span>06</span> Provide 24/7 customer support with automated responses, instant
+                    replies, and seamless communication across all channels.
+                  </li>
+
+                  <li>
+                    <span>07</span> Deliver high-quality multimedia content including images,
+                    videos, and PDFs to enhance user experience and engagement.
+                  </li>
+
+                  <li>
+                    <span>08</span> Ensure secure and reliable messaging with advanced data
+                    protection and high delivery success rates for every campaign.
                   </li>
                   <li>
-                    <span>03</span> Enhance system reliability and scalability.
+                    <span>09</span> Easily manage and scale your messaging campaigns with a
+                    centralized dashboard designed for efficiency and control.
                   </li>
+
                   <li>
-                    <span>04</span> Work with cloud-native technologies.
+                    <span>10</span> Boost conversions and customer retention with targeted messaging
+                    strategies tailored to your business needs.
                   </li>
                 </ul>
               </div>
@@ -148,11 +183,7 @@ const DevOpsTraining = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-img-wrap-18">
                 <div className="about-img-2">
-                  <img
-                    src={img3}
-                    alt="DevOps tools and workflow illustration"
-                    loading="lazy"
-                  />
+                  <img src={img3} alt="DevOps tools and workflow illustration" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -165,64 +196,87 @@ const DevOpsTraining = () => {
       <section className="category-section-16 padding-top-bottom">
         <div className="container">
           <div className="section-heading text-center">
-            <h2
-              className="section-title wow fade-in-bottom"
-              data-wow-delay="400ms"
-            >
-              What You Will Learn
+            <h2 className="section-title wow fade-in-bottom" data-wow-delay="400ms">
+              Our Services
             </h2>
           </div>
 
           <div className="category-wrap-16 category-wrap-16-2">
+            {/* Bulk Messaging */}
             <div className="cat-item text-center will-learn">
               <div className="icon">
-                <img src={icon18} alt="icon" />
+                <i
+                  className="fa-brands fa-whatsapp"
+                  style={{ fontSize: "40px", color: "#25d366" }}
+                ></i>
               </div>
-              <h3 className="title">DevOps Fundamentals</h3>
-              <p>1. Principles of DevOps & Agile</p>
-              <p>2. Continuous Integration (CI) & Continuous Delivery (CD)</p>
-              <p>3. Infrastructure as Code (IaC)</p>
+              <h3 className="title">WhatsApp Bulk Messaging</h3>
+              <p>1. Send messages to thousands of users instantly</p>
+              <p>2. High open rates & fast delivery</p>
+              <p>3. Perfect for promotions & updates</p>
+            </div>
+
+            {/* SMS Services */}
+            <div className="cat-item text-center will-learn">
+              <div className="icon">
+                <i
+                  className="fa-solid fa-comment-sms"
+                  style={{ fontSize: "40px", color: "#25d366" }}
+                ></i>
+              </div>
+              <h3 className="title">SMS & OTP Services</h3>
+              <p>1. Secure OTP & transactional messages</p>
+              <p>2. Instant alerts & notifications</p>
+              <p>3. Reliable delivery system</p>
+            </div>
+
+            {/* Media Sharing */}
+            <div className="cat-item text-center will-learn">
+              <div className="icon">
+                <i className="fa-solid fa-image" style={{ fontSize: "40px", color: "#25d366" }}></i>
+              </div>
+              <h3 className="title">Image & Video Messaging</h3>
+              <p>1. Send images & promotional banners</p>
+              <p>2. Share videos for better engagement</p>
+              <p>3. Improve brand visibility</p>
+            </div>
+
+            {/* PDF Sharing */}
+            <div className="cat-item text-center will-learn">
+              <div className="icon">
+                <i
+                  className="fa-solid fa-file-pdf"
+                  style={{ fontSize: "40px", color: "#25d366" }}
+                ></i>
+              </div>
+              <h3 className="title">PDF & Document Sharing</h3>
+              <p>1. Send invoices & reports instantly</p>
+              <p>2. Share brochures & documents</p>
+              <p>3. Secure & professional communication</p>
+            </div>
+
+            {/* Automation */}
+            <div className="cat-item text-center will-learn">
+              <div className="icon">
+                <i className="fa-solid fa-robot" style={{ fontSize: "40px", color: "#25d366" }}></i>
+              </div>
+              <h3 className="title">Automation & API Integration</h3>
+              <p>1. Automate messages & workflows</p>
+              <p>2. Easy API integration</p>
+              <p>3. Real-time notifications & alerts</p>
             </div>
 
             <div className="cat-item text-center will-learn">
               <div className="icon">
-                <img src={icon19} alt="icon" />
+                <i
+                  className="fa-solid fa-chart-line"
+                  style={{ fontSize: "40px", color: "#25d366" }}
+                ></i>
               </div>
-              <h3 className="title">DevOps Tools & Platforms</h3>
-              <p>1. Version Control: Git & GitHub</p>
-              <p>2. CI/CD: Jenkins, GitLab CI, Azure DevOps</p>
-              <p>3. Configuration Management: Ansible, Puppet, Chef</p>
-              <p>4. Containerization: Docker</p>
-              <p>5. Orchestration: Kubernetes</p>
-            </div>
-
-            <div className="cat-item text-center will-learn">
-              <div className="icon">
-                <img src={icon20} alt="icon" />
-              </div>
-              <h3 className="title">Cloud & Automation</h3>
-              <p>1. AWS, Azure, Google Cloud basics for DevOps</p>
-              <p>2. Terraform for Infrastructure Automation</p>
-            </div>
-
-            <div className="cat-item text-center will-learn">
-              <div className="icon">
-                <img src={icon21} alt="icon" />
-              </div>
-              <h3 className="title">Monitoring & Security</h3>
-              <p>1. Prometheus, Grafana for monitoring</p>
-              <p>2. ELK Stack for log management</p>
-              <p>3. DevSecOps basics</p>
-            </div>
-
-            <div className="cat-item text-center will-learn">
-              <div className="icon">
-                <img src={icon22} alt="icon" />
-              </div>
-              <h3 className="title">Real-Time Projects</h3>
-              <p>1. Automating application deployments</p>
-              <p>2. Setting up CI/CD pipelines</p>
-              <p>3. Containerizing & orchestrating a microservices app</p>
+              <h3 className="title">Campaign Analytics & Reporting</h3>
+              <p>1. Track message delivery and open rates</p>
+              <p>2. Analyze campaign performance in real-time</p>
+              <p>3. Gain insights to improve future campaigns</p>
             </div>
           </div>
         </div>
@@ -232,79 +286,107 @@ const DevOpsTraining = () => {
       <section className="feature-section-20 about-feature padding-top-bottom">
         <div className="container">
           <div className="section-heading text-center">
-            <h2 className="section-title">Training Highlights</h2>
+            <h2 className="section-title">Service Highlights</h2>
+            <p className="mt-2">
+              Powerful messaging solutions designed to help your business communicate faster,
+              smarter, and more effectively.
+            </p>
           </div>
 
-          <div className="row gy-lg-0 gy-4">
-            <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-item-20">
-                <div className="feature-inner">
-                  <div className="icon">
-                    <img src={img4} alt="Practical training" />
-                  </div>
-                  <div className="content">
-                    <h3 className="title">100% Practical</h3>
+          <div className="row gy-4">
+            {/* Fast Delivery */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-bolt"></i>
                   </div>
                 </div>
-                <p>Work on real-world DevOps scenarios.</p>
+                <h3 className="title">Instant Message Delivery</h3>
+                <p>
+                  Deliver SMS and WhatsApp messages instantly with high-speed infrastructure,
+                  ensuring your communication reaches users without delay.
+                </p>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-item-20">
-                <div className="feature-inner">
-                  <div className="icon">
-                    <img src={img5} alt="Expert trainers" />
-                  </div>
-                  <div className="content">
-                    <h3 className="title">
-                      Experienced DevOps Engineers as Trainers
-                    </h3>
+            {/* High Open Rate */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-eye"></i>
                   </div>
                 </div>
-                <p>Learn from industry experts.</p>
+                <h3 className="title">High Open & Response Rates</h3>
+                <p>
+                  Maximize engagement with industry-leading open rates, helping your messages get
+                  noticed and acted upon quickly.
+                </p>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-item-20">
-                <div className="feature-inner">
-                  <div className="icon">
-                    <img src={img6} alt="Curriculum" />
-                  </div>
-                  <div className="content">
-                    <h3 className="title">Job-Oriented Curriculum</h3>
+            {/* Media Support */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-photo-film"></i>
                   </div>
                 </div>
-                <p>Covers all skills needed for DevOps roles.</p>
+                <h3 className="title">Rich Media Messaging</h3>
+                <p>
+                  Enhance communication with images, videos, and documents to create more engaging
+                  and visually impactful campaigns.
+                </p>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-item-20">
-                <div className="feature-inner">
-                  <div className="icon">
-                    <img src={img7} alt="Flexible batches" />
-                  </div>
-                  <div className="content">
-                    <h3 className="title">Flexible Batches</h3>
+            {/* Automation */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-robot"></i>
                   </div>
                 </div>
-                <p>Classroom & online training options.</p>
+                <h3 className="title">Automation & API Integration</h3>
+                <p>
+                  Automate messaging workflows, OTPs, alerts, and campaigns using seamless API
+                  integration with your systems.
+                </p>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-item-20">
-                <div className="feature-inner">
-                  <div className="icon">
-                    <img src={img8} alt="Placement support" />
-                  </div>
-                  <div className="content">
-                    <h3 className="title">Placement Assistance</h3>
+            {/* Secure */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-shield-halved"></i>
                   </div>
                 </div>
-                <p>Resume building, mock interviews, and job referrals.</p>
+                <h3 className="title">Secure & Reliable Messaging</h3>
+                <p>
+                  Ensure safe delivery of OTPs and sensitive data with enterprise-grade security and
+                  reliability.
+                </p>
+              </div>
+            </div>
+
+            {/* Analytics */}
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-item-20 text-center p-4 shadow-sm rounded">
+                <div className="icon mb-3">
+                  <div className="icon-circle">
+                    <i className="fa-solid fa-chart-line"></i>
+                  </div>
+                </div>
+                <h3 className="title">Analytics & Performance Insights</h3>
+                <p>
+                  Monitor delivery, open rates, and campaign performance with detailed real-time
+                  analytics and reporting.
+                </p>
               </div>
             </div>
           </div>
@@ -320,25 +402,18 @@ const DevOpsTraining = () => {
         <div className="container">
           <div className="cta-content cta-content-3 text-center">
             <div className="section-heading text-center white-content mb-20">
-              <h2
-                className="section-title mt-10 wow fade-in-bottom"
-                data-wow-delay="400ms"
-              >
+              <h2 className="section-title mt-10 wow fade-in-bottom" data-wow-delay="400ms">
                 Build Your Career as a DevOps Today!
               </h2>
             </div>
 
             <p className="wow fade-in-bottom" data-wow-delay="500ms">
-              Call us now or visit our training center to enroll in our next
-              DevOps batch and
+              Call us now or visit our training center to enroll in our next DevOps batch and
               <br />
               take the first step toward a rewarding career in tech.
             </p>
 
-            <div
-              className="cta-btn-wrap wow fade-in-bottom"
-              data-wow-delay="600ms"
-            >
+            <div className="cta-btn-wrap wow fade-in-bottom" data-wow-delay="600ms">
               <a href="/contact-us" className="ed-primary-btn cta-btn-2">
                 Book Admission Now <i className="fa-solid fa-arrow-right"></i>
               </a>
@@ -350,36 +425,27 @@ const DevOpsTraining = () => {
       <section className="course-category padding-top-bottom">
         <div className="container">
           <div className="section-heading text-center">
-            <h2
-              className="section-title wow fade-in-bottom"
-              data-wow-delay="400ms"
-            >
-              Who Can Join?
+            <h2 className="section-title wow fade-in-bottom" data-wow-delay="400ms">
+              Who Can Use These Services?
             </h2>
           </div>
-          <div
-            className="category-items wow fade-in-bottom"
-            data-wow-delay="500ms"
-          >
+          <div className="category-items wow fade-in-bottom" data-wow-delay="500ms">
             <div className="category-item">
-              <a href="#"> Software Developers </a>
+              <a href="#">Startups & Growing Businesses </a>
             </div>
             <div className="category-item">
-              <a href="#"> System Administrators </a>
+              <a href="#"> E-commerce & Online Stores </a>
             </div>
             <div className="category-item">
-              <a href="#"> Cloud Professionals </a>
+              <a href="#"> Digital Marketing & Advertising Agencies </a>
             </div>
           </div>
-          <div
-            className="category-items wow fade-in-bottom"
-            data-wow-delay="600ms"
-          >
+          <div className="category-items wow fade-in-bottom" data-wow-delay="600ms">
             <div className="category-item">
-              <a href="#"> IT Students & Fresh Graduates </a>
+              <a href="#"> Customer Support & Service Teams </a>
             </div>
             <div className="category-item">
-              <a href="#"> Anyone aspiring to build a career in DevOps </a>
+              <a href="#"> Enterprises & Large Organizations </a>
             </div>
           </div>
         </div>
@@ -395,4 +461,4 @@ const DevOpsTraining = () => {
   );
 };
 
-export default DevOpsTraining;
+export default WhatsappSms;

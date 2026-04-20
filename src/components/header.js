@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/css/all.css";
-import logo from "../assets/img/logo/logo.png";
+import logo from "../assets/img/logo/logo.jpeg";
 import { Link } from "react-router-dom";
 import "./header.css";
 
@@ -17,33 +17,33 @@ const Header = () => {
     setDropdownOpen(false);
   };
 
-useEffect(() => {
-  const header = document.getElementById("main-header");
+  useEffect(() => {
+    const header = document.getElementById("main-header");
 
-  const setPadding = () => {
-    if (header) {
-      const height = header.offsetHeight;
-      document.body.style.paddingTop = height + "px";
-    }
-  };
+    const setPadding = () => {
+      if (header) {
+        const height = header.offsetHeight;
+        document.body.style.paddingTop = height + "px";
+      }
+    };
 
-  setPadding(); // run on load
-  window.addEventListener("resize", setPadding); // update on resize
+    setPadding(); // run on load
+    window.addEventListener("resize", setPadding); // update on resize
 
-  return () => window.removeEventListener("resize", setPadding);
-}, []);
+    return () => window.removeEventListener("resize", setPadding);
+  }, []);
   return (
     <>
       <header
-  id="main-header"
-  className="header header-3 header-6 header-7 sticky-active"
-  style={{
-    position: "fixed",
-    top: 0,
-    width: "100%",
-    zIndex: 999
-  }}
->
+        id="main-header"
+        className="header header-3 header-6 header-7 sticky-active"
+        style={{
+          position: "fixed",
+          top: 0,
+          width: "100%",
+          zIndex: 999,
+        }}
+      >
         {/* Top Bar */}
         <div className="top-bar">
           <div className="container">
@@ -58,7 +58,7 @@ useEffect(() => {
                   </li>
                   <li>
                     <i className="fa-solid fa-phone"></i>
-                    <Link to="tel:+917680001943">+91 954 253 5632</Link>
+                    <Link to="tel:+919542535632">+91 954 253 5632</Link>
                   </li>
                 </ul>
               </div>
@@ -110,7 +110,7 @@ useEffect(() => {
         </div>
 
         {/* Primary Header */}
-        <div className="primary-header" style={{ backgroundColor:"#fff"}}>
+        <div className="primary-header" style={{ backgroundColor: "#fff" }}>
           <div className="container">
             <div className="primary-header-inner">
               <div className="header-logo d-lg-block">
@@ -129,58 +129,41 @@ useEffect(() => {
                       <Link to="/about-us">About Us</Link>
                     </li>
 
-                        <li className={`menu-item-has-children ${dropdownOpen ? "open" : ""}`}>
-      
-      {/* Parent Menu */}
-      <Link to="#" onClick={handleDropdownToggle}>
-        Services
-      </Link>
+                    <li className={`menu-item-has-children ${dropdownOpen ? "open" : ""}`}>
+                      {/* Parent Menu */}
+                      <Link to="#" onClick={handleDropdownToggle}>
+                        Services
+                      </Link>
 
-      {/* Dropdown */}
-      {dropdownOpen && (
-        <ul>
-          <li>
-            <Link to="/devops-training-in-hyderabad" onClick={handleCloseDropdown}>
-              Devops
-            </Link>
-          </li>
-          {/* <li>
-            <Link to="/azure-devops-training-in-hyderabad" onClick={handleCloseDropdown}>
-              Azure DevOps
-            </Link>
-          </li> */}
-          <li>
-            <Link to="/data-science-course-in-hyderabad" onClick={handleCloseDropdown}>
-              Data Science
-            </Link>
-          </li>
-          <li>
-            <Link to="/data-analytics-course-in-hyderabad" onClick={handleCloseDropdown}>
-              Data Analytics
-            </Link>
-          </li>
-          {/* <li>
-            <Link to="/power-bi-training-in-hyderabad" onClick={handleCloseDropdown}>
-              Power BI
-            </Link>
-          </li> */}
-          <li>
-            <Link to="/finops-training-in-hyderabad" onClick={handleCloseDropdown}>
-              FinOps
-            </Link>
-          </li>
-        </ul>
-      )}
-    </li>
+                      {/* Dropdown */}
+                      {dropdownOpen && (
+                        <ul>
+                          <li>
+                            <Link to="/whatsappsms" onClick={handleCloseDropdown}>
+                              Whatsapp SMS
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/whatsappapi"
+                              onClick={handleCloseDropdown}
+                            >
+                              WhatsApp API
+                            </Link>
+                          </li>
+                        </ul>
+                      )}
+                    </li>
 
                     <li>
-                      <Link to="#">Book Demo</Link>
+                      <Link to="/contact-us">Book Demo</Link>
                     </li>
-                    <li>
-                      <Link to="#">Job Portal</Link>
-                    </li>
+
                     <li>
                       <Link to="/contact-us">Contact Us</Link>
+                    </li>
+                    <li>
+                    <Link to="/contact-us">Prices</Link>
                     </li>
                   </ul>
                 </div>
@@ -188,8 +171,8 @@ useEffect(() => {
 
               <div className="header-right-wrap">
                 <div className="header-right">
-                  <Link to="/contact-us" className="ed-primary-btn header-btn">
-                    Enroll Now
+                  <Link to="/login" className="ed-primary-btn header-btn">
+                    SignUp
                   </Link>
                   <div className="header-logo d-none d-lg-none">
                     <Link to="/">
@@ -254,45 +237,29 @@ useEffect(() => {
             </div>
 
             {coursesOpen && (
-  <ul>
-    <li>
-      <Link to="/devops-training-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        Devops
-      </Link>
-    </li>
-    <li>
-      <Link to="/azure-devops-training-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        Azure DevOps
-      </Link>
-    </li>
-    <li>
-      <Link to="/data-science-course-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        Data Science
-      </Link>
-    </li>
-    <li>
-      <Link to="/data-analytics-course-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        Data Analytics
-      </Link>
-    </li>
-    <li>
-      <Link to="/power-bi-training-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        Power BI
-      </Link>
-    </li>
-    <li>
-      <Link to="/finops-training-in-hyderabad" onClick={() => setMenuOpen(false)}>
-        FinOps
-      </Link>
-    </li>
-  </ul>
-)}
+              <ul>
+                <li>
+                  <Link to="/devops-training-in-hyderabad" onClick={() => setMenuOpen(false)}>
+                    Devops
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/data-science-course-in-hyderabad" onClick={() => setMenuOpen(false)}>
+                    Data Science
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
-            <Link to="/" onClick={() => setMenuOpen(false)}>Up Coming Demos</Link></li>
-          <li>
             <Link to="/" onClick={() => setMenuOpen(false)}>
-            Job Portal</Link></li>
+              Book Demo
+            </Link>
+          </li>
+          <li>
+            
+          </li>
           <li>
             <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
               Contact

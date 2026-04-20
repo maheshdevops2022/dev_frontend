@@ -1,0 +1,110 @@
+.login-container {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+              url("./assets/img/login.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 45px 35px;
+  width: 360px;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.head {
+  color: #25d366;
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+/* Input Fields */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-top: 6px;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #ccc;
+}
+
+/* Focus effect */
+.input-group input:focus {
+  border-color: #25d366;
+  box-shadow: 0 0 8px rgba(37,211,102,0.5);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #25d366, #128c7e);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(37,211,102,0.4);
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.footer-text span {
+  color: #25d366;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-text span:hover {
+  text-decoration: underline;
+}

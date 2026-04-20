@@ -1,8 +1,8 @@
 import React from "react";
 import devops from "../assets/img/icons/icon1.png";
 import python from "../assets/img/icons/icon2.png";
-import DataScience from "../assets/img/icons/icon4.png";
-import DataAnalysis from "../assets/img/icons/icon5.png";
+import WhatsappApi from "../assets/img/icons/icon3.png";
+import DataAnalysis from "../assets/img/icons/icon4.png";
 import "../assets/css/all.css";
 
 
@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Video Messaging",
-    icon: DataScience,
+    icon: WhatsappApi,
     delay: "500ms",
     description:
       "Boost engagement with video campaigns. Send product demos, ads, and personalized to your audience and customers.",

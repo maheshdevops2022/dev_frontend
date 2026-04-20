@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 //import Header from "./components/Header";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import CTASection from "./components/CTASection";
@@ -21,26 +21,32 @@ function Aboutus() {
   return (
     <div>
       {/* <Header /> */}
-      <AboutPage/>
+      <AboutPage />
       {/* Page Header */}
       <section className="page-header">
         <div className="bg-item">
           <div
-  className="bg-img"
-  style={{
-    backgroundImage: `url(${img})`,
-    backgroundSize: "cover",       // makes image fill screen
-    backgroundPosition: "center",  // keeps it centered
-    backgroundRepeat: "no-repeat", // prevents tiling
-    width: "100%",
-    height: "100vh"                // full screen height
-  }}
-></div>
+            className="bg-img"
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              width: "100vw", // Use viewport width for true full screen
+              height: "100vh", // Use viewport height
+              margin: 0,
+              display: "flex", // Optional: centers content inside
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {/* Your content here (e.g., "Welcome to Dev Infotech") */}
+          </div>
         </div>
 
         <div className="container">
           <div className="page-header-content">
-            <h1 className="title text-center">About Us</h1>
+            <h1 className="title text-center">About Dev Infotechs</h1>
           </div>
         </div>
       </section>

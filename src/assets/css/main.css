@@ -2131,7 +2131,7 @@ ul {
     Buttons CSS
 */
 .ed-primary-btn {
-  background-color: #000000;
+  background-color: #25d366;
   font-family: var(--ed-ff-heading);
   color: var(--ed-color-common-white);
   display: inline-flex;
@@ -2154,7 +2154,7 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: 25d366;
   transform-origin: right center;
   transform: scale(0, 1);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2177,19 +2177,41 @@ ul {
 }
 .ed-primary-btn.transparent {
   background-color: transparent;
-  border: 1px solid var(--ed-color-theme-primary);
-  color: var(--ed-color-heading-primary);
+  border: 1px solid #25d366;
+  color: #25d366;
 }
 .ed-primary-btn.transparent:hover {
   color: var(--ed-color-common-white);
 }
 .ed-primary-btn.transparent:before {
-  background-color: var(--ed-color-theme-primary);
+  background-color: #25d366;
 }
 
 /**----------------------------------------
 START: Header CSS
 ----------------------------------------*/
+
+
+.cat-item .icon i {
+  font-size: 40px;
+  color: #25d366;
+  margin-bottom: 15px;
+}
+
+.cat-item {
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cat-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+
+
 .header {
   background-color: var(--ed-color-common-white);
   width: 100%;
@@ -5182,7 +5204,7 @@ START: About CSS
 }
 .about-img-wrap .about-img-1 img {
   width: 100%;
-  height: 100%;
+  height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0 60px 0 60px;
@@ -5379,10 +5401,11 @@ START: About CSS
 }
 .about-img-wrap-3 .about-img .main-img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  margint-top: 10px;
 }
 .about-img-wrap-3 .icon-box {
   background-color: var(--ed-color-common-white);
@@ -8628,7 +8651,7 @@ START: Feature CSS
     border: 1px solid #000000;
 }
 .feature-card .content .ed-primary-btn:before {
-background-color: #ff3131;
+background-color: green;
 }
 .feature-card .content .ed-primary-btn:hover {
   color: var(--ed-color-common-white);
@@ -11837,7 +11860,7 @@ background-color: var(--ed-color-common-white);
     -moz-column-gap: 15px;
     column-gap: 15px;
     border-radius: 100px;
-    border: 1px solid #ff3131;
+    border: 1px solid #06b8e9;
     text-align: center;
 }
 @media only screen and (max-width: 767px) {
@@ -11847,7 +11870,7 @@ background-color: var(--ed-color-common-white);
   }
 }
 .category-items .category-item a:hover {
-  background-color: #ff3131;
+  background-color: #06b8e9;
   color: var(--ed-color-common-white);
 }
 .category-items .category-item a span {
@@ -15125,23 +15148,32 @@ START: Home 11 CSS
   border-radius: 15px;
   border: 4px solid var(--ed-color-common-white);
 }
+
+.about-img-wrap-11 {
+  position: relative;
+  height: 500px;
+  width: 100%;        /* ✅ full width */
+  margin: auto;       /* center align */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-img-wrap-11 .about-img-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 353px;
   width: 100%;
   height: 100%;
 }
+
 .about-img-wrap-11 .about-img-2 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;   /* 🔥 MAIN FIX */
   border-radius: 15px;
 }
+
 .about-img-wrap-11 .about-exp {
-  background-color: #ff3131;
+  background-color: #1ea0a9d7d7;
   padding: 15px 30px;
   position: absolute;
   top: 0;
@@ -18595,7 +18627,7 @@ START: Home 16 CSS
   transition: all 0.3s ease-in-out;
 }
 .category-wrap-16 .cat-item:hover .icon {
-    background-color: #ff3131;
+    background-color: green;
 }
 
 .promo-item-16 {
@@ -20077,19 +20109,26 @@ START: Home 18 CSS
      object-fit: cover;
   border-radius: 15px;
 }
-.about-img-wrap-18 .about-img-2 {
-  height: 100%;
-  /* max-width: 411px; */
+
+/* Parent container */
+.about-img-wrap-18 {
+  position: relative;
   width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  height: auto;   /* important */
 }
+
+/* Image wrapper */
+.about-img-wrap-18 .about-img-2 {
+  position: relative;   /* ❌ absolute remove */
+  width: 100%;
+}
+
+/* Image */
 .about-img-wrap-18 .about-img-2 img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  display: block;
   border-radius: 15px;
 }
 .about-img-wrap-18 .about-img-3 {
@@ -23147,7 +23186,7 @@ margin-bottom: 5px;
 .padding-top-bottom
 {
     padding-bottom: 70px;
-    padding-top: 50px;
+    padding-top: 1px;
 }
 .feature-section-14
 {
@@ -23233,7 +23272,7 @@ width: 70px;
 }
 .read-more-styles
 {
-    background-color: #ff3131 !important;
+    background-color: #bule !important;
 }
 .form-control2::placeholder
 {

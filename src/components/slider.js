@@ -74,7 +74,7 @@ const SliderSection = () => {
 
                     <div className="sub-heading-wrap">
                       <h4 className="sub-heading">
-                        Welcome to Dev Infotech's
+                        Welcome to Dev Infotechs
                       </h4>
                     </div>
 
@@ -95,14 +95,14 @@ const SliderSection = () => {
                         className="ed-primary-btn slider-btn read-more-styles"
                         href="#"
                       >
-                        Read More
+                        Explore More
                       </a>
 
                       <a
                         className="ed-primary-btn slider-btn read-more-styles"
                         href="/contact-us"
                       >
-                        Book Admission Now
+                        Book Demo Now
                       </a>
                     </div>
 

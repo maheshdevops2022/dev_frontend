@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 // import Header from './components/header';
 // import Footer from './components/footer';
 import "./assets/css/all.css";
@@ -8,122 +8,134 @@ import PrivacyPolicyPage from "./components/seo/privacypolicy/PrivacypolicyPage"
 const PrivacyPolicy = () => {
   return (
     <>
-    {/* <Header /> */}
-    <PrivacyPolicyPage/>
-    <section className="about-section padding-top-bottom policy-section">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-xl-10 col-lg-11">
-            <div className="about-content policy-box">
+      {/* <Header /> */}
+      <PrivacyPolicyPage />
+      <section className="about-section padding-top-bottom policy-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-10 col-lg-11">
+              <div className="about-content policy-box">
+                <div className="section-heading text-center mb-4">
+                  <h2>Dev Infotechs</h2>
+                  <h4>Privacy Policy – Bulk SMS Services</h4>
+                  <div className="divider"></div>
+                </div>
 
-              <div className="section-heading text-center mb-4">
-                <h2>RR TECHNOSOFT</h2>
-                <h4>Privacy & Policy</h4>
-                <div className="divider"></div>
-              </div>
-
-              <p className="intro">
-                At RR Technosoft, we are committed to protecting your privacy and safeguarding your personal information.
-                This Privacy Policy outlines how we collect, use, store, and protect your data.
-              </p>
-
-              <div className="policy-block">
-                <h5>1. Information We Collect</h5>
-                <p>We collect only the necessary information:</p>
-                <ul>
-                  <li>Full name, email, and phone number</li>
-                  <li>Academic or professional details</li>
-                  <li>Payment and billing information</li>
-                  <li>Technical data (IP, browser, device)</li>
-                  <li>Feedback and communications</li>
-                </ul>
-              </div>
-
-              <div className="policy-block">
-                <h5>2. How We Use Your Information</h5>
-                <ul>
-                  <li>Course registrations & administration</li>
-                  <li>Personalized learning experience</li>
-                  <li>Updates, offers & notifications</li>
-                  <li>Support & issue resolution</li>
-                  <li>Platform improvements</li>
-                  <li>Fraud prevention</li>
-                </ul>
-              </div>
-
-              <div className="policy-block">
-                <h5>3. Information Protection</h5>
-                <p>
-                  We implement strong security measures to protect your data from unauthorized access,
-                  misuse, or loss.
+                <p className="intro">
+                  At Dev Infotechs, we value your privacy and are committed to protecting your
+                  personal and business information. This Privacy Policy explains how we collect,
+                  use, and safeguard data while providing our Bulk SMS Services.
                 </p>
+
+                <div className="policy-block">
+                  <h5>1. Information We Collect</h5>
+                  <ul>
+                    <li>Account details (Name, Email, Phone Number)</li>
+                    <li>Business information</li>
+                    <li>Uploaded contact lists for SMS campaigns</li>
+                    <li>Message content and delivery reports</li>
+                    <li>Technical data (IP address, browser, device info)</li>
+                  </ul>
+                </div>
+
+                <div className="policy-block">
+                  <h5>2. How We Use Your Information</h5>
+                  <ul>
+                    <li>To send Bulk SMS campaigns</li>
+                    <li>To manage and maintain your account</li>
+                    <li>To provide delivery reports and analytics</li>
+                    <li>To improve service performance</li>
+                    <li>To provide customer support</li>
+                  </ul>
+                </div>
+
+                <div className="policy-block">
+                  <h5>3. Data Security</h5>
+                  <p>
+                    We implement advanced security measures to protect your data from unauthorized
+                    access, loss, or misuse. Your uploaded contact data is encrypted and securely
+                    stored.
+                  </p>
+                </div>
+
+                <div className="policy-block">
+                  <h5>4. Data Confidentiality</h5>
+                  <p>
+                    Dev Infotechs does not sell, rent, or share your data with third parties. Your
+                    customer contact lists and SMS content remain strictly confidential.
+                  </p>
+                </div>
+
+                <div className="policy-block">
+                  <h5>5. User Responsibilities</h5>
+                  <ul>
+                    <li>You must ensure recipients have consent to receive messages</li>
+                    <li>No spam, illegal, or abusive content is allowed</li>
+                    <li>Compliance with TRAI regulations is mandatory</li>
+                  </ul>
+                </div>
+
+                <div className="policy-block">
+                  <h5>6. Third-Party Integrations</h5>
+                  <p>
+                    We may use trusted third-party providers for SMS gateway delivery and analytics,
+                    ensuring they follow strict data protection standards.
+                  </p>
+                </div>
+
+                <div className="policy-block">
+                  <h5>7. Cookies & Tracking</h5>
+                  <ul>
+                    <li>Session cookies for login management</li>
+                    <li>Analytics to improve user experience</li>
+                  </ul>
+                </div>
+
+                <div className="policy-block">
+                  <h5>8. Compliance</h5>
+                  <p>We comply with Indian IT laws and TRAI guidelines for Bulk SMS services.</p>
+                </div>
+
+                <div className="policy-block">
+                  <h5>9. Your Rights</h5>
+                  <ul>
+                    <li>Access your data</li>
+                    <li>Request corrections</li>
+                    <li>Request deletion of your account</li>
+                  </ul>
+                </div>
+
+                <div className="policy-block">
+                  <h5>10. Updates to Policy</h5>
+                  <p>
+                    This Privacy Policy may be updated periodically. Continued use of our services
+                    means you accept the changes.
+                  </p>
+                </div>
+
+                <div className="contact-box mt-4">
+                  <h5>Contact Us</h5>
+                  <p>
+                    <strong>Company:</strong> Dev Infotechs
+                  </p>
+                  <p>
+                    <strong>Service:</strong> Bulk SMS Solutions
+                  </p>
+                  <p>
+                    <strong>Email:</strong> support@devinfotech.com
+                  </p>
+                  <p>
+                    <strong>Phone:</strong> +91 XXXXX XXXXX
+                  </p>
+                </div>
+
+                <p className="footer text-center mt-4">© 2026 Dev Infotechs. All Rights Reserved.</p>
               </div>
-
-              <div className="policy-block">
-                <h5>4. Confidentiality</h5>
-                <p>
-                  Your information is strictly confidential and will never be sold or shared
-                  without legal requirement.
-                </p>
-              </div>
-
-              <div className="policy-block">
-                <h5>5. Consent & Control</h5>
-                <ul>
-                  <li>Access your data</li>
-                  <li>Request corrections</li>
-                  <li>Request deletion</li>
-                  <li>Withdraw consent</li>
-                </ul>
-              </div>
-
-              <div className="policy-block">
-                <h5>6. Third-Party Services</h5>
-                <p>We work with trusted partners for payments and analytics.</p>
-              </div>
-
-              <div className="policy-block">
-                <h5>7. Communication Preferences</h5>
-                <p>You can unsubscribe from marketing emails anytime.</p>
-              </div>
-
-              <div className="policy-block">
-                <h5>8. Cookies & Analytics</h5>
-                <ul>
-                  <li>Essential Cookies</li>
-                  <li>Analytics Cookies</li>
-                  <li>Preference Cookies</li>
-                </ul>
-              </div>
-
-              <div className="policy-block">
-                <h5>9. Regulatory Compliance</h5>
-                <p>We comply with applicable Indian data protection laws.</p>
-              </div>
-
-              <div className="policy-block">
-                <h5>10. Changes to This Policy</h5>
-                <p>This policy may be updated periodically.</p>
-              </div>
-
-              <div className="contact-box mt-4">
-                <h5>Contact Us</h5>
-                <p><strong>Company:</strong> RR Technosoft</p>
-                <p><strong>Address:</strong> Kukatpally, Hyderabad</p>
-                <p><strong>Phone:</strong> +91 768 000 1943</p>
-                <p><strong>Email:</strong> enquiry@rrtechnosoft.in</p>
-              </div>
-
-              <p className="footer text-center mt-4">
-                © 2026 RR Technosoft. All Rights Reserved.
-              </p>
-
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    {/* <Footer /> */}
+      </section>
+      {/* <Footer /> */}
     </>
   );
 };

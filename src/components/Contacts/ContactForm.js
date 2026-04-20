@@ -6,7 +6,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    service: "",
     message: "",
   });
 
@@ -26,69 +26,69 @@ const ContactForm = () => {
   //       formData
   //     );
   //     setResponseMessage(response.data.message);
-  //     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+  //     setFormData({ name: "", email: "", phone: "", service: "", message: "" });
   //   } catch (error) {
   //     setResponseMessage("Something went wrong. Please try again.");
   //   } finally {
   //     setLoading(false);
   //   }
   // };
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  try {
-    const response = await axios.post(
-      "https://api.rrtechnosoft.in/api/contact/contact/",
-      formData
-    );
+    try {
+      const response = await axios.post(
+        "https://api.rrtechnosoft.in/api/contact/contact/",
+        formData
+      );
 
-    setResponseMessage(response.data.message);
+      setResponseMessage(response.data.message);
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-
-  } catch (error) {
-    setResponseMessage("Something went wrong. Please try again.");
-  } finally {
-    setLoading(false);
-  }
-};
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+    } catch (error) {
+      setResponseMessage("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="blog-contact-form contact-form">
       <h2 className="title mb-3">Submit</h2>
       <form onSubmit={handleSubmit} className="request-form">
-
         {/* Name & Email */}
         <div className="form-group row">
           <div className="col-md-6">
             <div className="form-item">
               <input
-  type="text"
-  name="name"
-  value={formData.name}
-  onChange={(e) => {
-    const onlyText = e.target.value.replace(/[^a-zA-Z\s]/g, "");
-    handleChange({
-      target: {
-        name: "name",
-        value: onlyText,
-      },
-    });
-  }}
-  className="form-control form-control2"
-  placeholder="Your Name"
-  required
-  style={{ color: "#000" }}
-/>
-              <div className="icon"><i className="fa-regular fa-user"></i></div>
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={(e) => {
+                  const onlyText = e.target.value.replace(/[^a-zA-Z\s]/g, "");
+                  handleChange({
+                    target: {
+                      name: "name",
+                      value: onlyText,
+                    },
+                  });
+                }}
+                className="form-control form-control2"
+                placeholder="Your Name"
+                required
+                style={{ color: "#000" }}
+              />
+              <div className="icon">
+                <i className="fa-regular fa-user"></i>
+              </div>
             </div>
           </div>
           <div className="col-md-6">
@@ -103,7 +103,9 @@ const handleSubmit = async (e) => {
                 required
                 style={{ color: "#000" }} // Black text
               />
-              <div className="icon"><i className="fa-regular fa-envelope"></i></div>
+              <div className="icon">
+                <i className="fa-regular fa-envelope"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -113,39 +115,45 @@ const handleSubmit = async (e) => {
           <div className="col-md-6">
             <div className="form-item">
               <input
-  type="text"
-  name="phone"
-  value={formData.phone}
-  onChange={handleChange}
-  onKeyPress={(e) => {
-    if (!/[0-9]/.test(e.key)) {
-      e.preventDefault();
-    }
-  }}
-  className="form-control form-control2"
-  placeholder="Your Phone No"
-  style={{ color: "#000" }}
-/>
-              <div className="icon"><i className="fa-solid fa-phone"></i></div>
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                onKeyPress={(e) => {
+                  if (!/[0-9]/.test(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
+                className="form-control form-control2"
+                placeholder="Your Phone No"
+                style={{ color: "#000" }}
+              />
+              <div className="icon">
+                <i className="fa-solid fa-phone"></i>
+              </div>
             </div>
           </div>
           <div className="col-md-6">
             <div className="form-item">
               <select
-                name="subject"
-                value={formData.subject}
+                name="service"
+                value={formData.service}
                 onChange={handleChange}
                 className="niceSelect select-control form-control form-control2 contact-field-styles"
                 required
-                style={{ color: formData.subject ? "#000" : "#888" }} // Black text if selected, gray placeholder
+                style={{ color: formData.service ? "#000" : "#888" }} // Black text if selected, gray placeholder
               >
-                <option value="">Select Training</option>
-                <option value="DevOps">DevOps</option>
-                {/* <option value="Data Science">Data Science</option> */}
-                <option value="Data Analytics">Data Analytics</option>
-                {/* <option value="Azure DevOps">Azure DevOps</option> */}
-                {/* <option value="Power BI">Power BI</option> */}
-                <option value="FinOps">FinOps</option>
+                <option value="">Select Service</option>
+                <option value="all services">All Services</option>
+                <option value="sms">Whatsapp SMS</option>
+                <option value="image">Image Messaging</option>
+                <option
+                  value="poll>Poll Messaging</option>
+
+                <option value=video"
+                >
+                  Video Messaging
+                </option>
               </select>
             </div>
           </div>
@@ -166,7 +174,9 @@ const handleSubmit = async (e) => {
                 required
                 style={{ color: "#FFF" }} // Black text
               ></textarea>
-              <div className="icon"><i className="fa-regular fa-comment-dots"></i></div>
+              <div className="icon">
+                <i className="fa-regular fa-comment-dots"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -181,7 +191,9 @@ const handleSubmit = async (e) => {
 
       {/* Response Message */}
       {responseMessage && (
-        <div id="form-messages" className="alert mt-20">{responseMessage}</div>
+        <div id="form-messages" className="alert mt-20">
+          {responseMessage}
+        </div>
       )}
     </div>
   );

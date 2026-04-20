@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="footer-widget">
                   <h3 className="widget-header">About Us</h3>
                   <p className="mb-30">
-                    At Dev Infotech's, we are dedicated to helping businesses grow through powerful
+                    At Dev Infotechs, we are dedicated to helping businesses grow through powerful
                     and reliable messaging solutions.we specialize in providing high-quality bulk
                     SMS and WhatsApp API services designed to enhance customer communication and
                     engagement. Our platform enables businesses to send SMS, images, videos, and
@@ -72,8 +72,7 @@ const Footer = () => {
                   <ul className="footer-list">
                     <li>
                       <Link
-                        to="/devops-training-in-hyderabad"
-                        onClick={() => window.scrollTo(0, 0)}
+                        
                       >
                         Whatsapp SMS
                       </Link>
@@ -85,28 +84,20 @@ const Footer = () => {
                     </li> */}
                     <li>
                       <Link
-                        to="/data-science-course-in-hyderabad"
-                        onClick={() => window.scrollTo(0, 0)}
+                        
                       >
                         Images
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/data-analytics-course-in-hyderabad"
-                        onClick={() => window.scrollTo(0, 0)}
-                      >
+                                              >
                         Videos
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link to="/power-bi-training-in-hyderabad" onClick={() => window.scrollTo(0,0)}>Power BI</Link>
-                    </li> */}
-                    <li>
+                   <li>
                       <Link
-                        to="/finops-training-in-hyderabad"
-                        onClick={() => window.scrollTo(2, 0)}
-                      >
+                                           >
                         Polls
                       </Link>
                     </li>
@@ -126,7 +117,7 @@ const Footer = () => {
                   <div className="footer-contact mb-10">
                     <span className="number">
                       <i className="fa-solid fa-phone"></i>
-                      <Link to="tel:+917680001943"> +91 768 000 1943</Link>
+                      <Link to="tel:+919542535632"> +91 954 253 5632</Link>
                     </span>
                     <span className="number">
                       <i className="fa-regular fa-envelope"></i>
@@ -208,7 +199,7 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://api.whatsapp.com/send?phone=+917680001943&text=Hi, I interested in your services..."
+          href="https://api.whatsapp.com/send?phone=+919542535632&text=Hi, I interested in your services..."
         >
           <div className="contact_icon">
             <i className="fab fa-whatsapp my-float"></i>

@@ -12,16 +12,16 @@ function WelcomeContext() {
               <span className="heading-icon">
                 <i className="fa-sharp fa-solid fa-bolt"></i>
               </span>
-              About Dev Infotech's
+              About Dev Infotechs
             </h4>
 
             <h2 className="section-title wow fade-in-bottom" data-wow-delay="400ms">
-              Welcome to Dev Infotech's
+              Welcome to Dev Infotechs
             </h2>
           </div>
 
           <p className="wow fade-in-bottom" data-wow-delay="500ms" style={{ textAlign: "justify" }}>
-            At Dev Infotech, we specialize in delivering reliable and scalable bulk messaging
+            At Dev Infotechs, we specialize in delivering reliable and scalable bulk messaging
             solutions that help businesses connect with their audience instantly. Based in
             Hyderabad, we provide high-performance Bulk SMS and WhatsApp API services designed to
             enhance customer communication, marketing campaigns, and business engagement.

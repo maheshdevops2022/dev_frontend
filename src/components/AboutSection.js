@@ -1,5 +1,5 @@
 import React from "react";
-import about1 from "../assets/img/abt-img1.avif";
+import about1 from "../assets/img/abt-img1.png";
 import about2 from "../assets/img/abt-img2.jpeg";
 import WelcomeContext from "./WelcomeContext";
 import "../assets/css/all.css";
@@ -30,7 +30,7 @@ const Aboutsection = () => {
                 </div>
                 <div className="content">
                   <span>Call Us Now</span>
-                  <span>+91 768 000 1943</span>
+                  <span>+91 954 253 5632</span>
                 </div>
               </div>
             </div>

@@ -30,39 +30,30 @@ const CTASection = () => {
                 Top Class Courses
               </h4> */}
 
-              <h2
-                className="section-title wow fade-in-bottom"
-                data-wow-delay="400ms"
-              >
-                RR Technosoft – Empowering IT Careers
+              <h2 className="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                Dev Infotechs is a WhatsApp Bulk Messaging
               </h2>
             </div>
 
             <p>
-              Join RR Technosoft and gain real-world skills in today’s <br />
-              top technologies.
+              Send thousands of messages instantly to your customers using our <br /> WhatsApp API.
+              Promote offers, updates, and announcements <br />with high delivery rates.
             </p>
             <p>
-              From expert training to job support — we help you build <br />
-              a successful IT career.
+              Automate replies, customer support, and notifications with smart <br /> WhatsApp chatbots.
+              Provide 24/7 instant responses and improve <br />customer engagement.
             </p>
           </div>
 
           <div className="bg-item">
             <div className="cta-shape-1">
-              <img
-                src={shape1}
-                alt="shape"
-              />
+              <img src={shape1} alt="shape" />
             </div>
           </div>
 
           <div className="cta-img-wrap-11">
             <div className="cta-men">
-              <img
-                src={men}
-                alt="cta"
-              />
+              <img src={men} alt="cta" />
             </div>
           </div>
         </div>

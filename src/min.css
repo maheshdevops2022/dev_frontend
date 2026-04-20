@@ -1,0 +1,24 @@
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: rgba(37, 211, 102, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-circle i {
+  font-size: 28px;
+  color: #25d366;
+}
+
+.feature-item-20 {
+  transition: all 0.3s ease;
+}
+
+.feature-item-20:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
