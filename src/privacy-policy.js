@@ -3,13 +3,12 @@ import React, { useEffect } from "react";
 // import Footer from './components/footer';
 import "./assets/css/all.css";
 // import { Helmet } from "react-helmet";
-import PrivacyPolicyPage from "./components/seo/privacypolicy/PrivacypolicyPage";
 
 const PrivacyPolicy = () => {
   return (
     <>
       {/* <Header /> */}
-      <PrivacyPolicyPage />
+      {/* <PrivacyPolicyPage /> */}
       <section className="about-section padding-top-bottom policy-section">
         <div className="container">
           <div className="row justify-content-center">

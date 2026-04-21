@@ -44,42 +44,39 @@ const ContactForm = () => {
     setFormMessage({ type: "", text: "" });
 
     try {
-  const response = await fetch(
-    "https://api.rrtechnosoft.in/api/contact/contact/",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+      const response = await fetch("https://api.rrtechnosoft.in/api/contact/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setFormMessage({ type: "success", text: "Message sent successfully!" });
+
+        // Reset form (optional but recommended)
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+
+        // 🔥 Auto reload after 2 seconds
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      } else {
+        setFormMessage({ type: "error", text: data.message || "Failed to send message" });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setFormMessage({ type: "error", text: "Something went wrong!" });
     }
-  );
-
-  const data = await response.json();
-
-  if (response.ok) {
-    setFormMessage({ type: "success", text: "Message sent successfully!" });
-
-    // Reset form (optional but recommended)
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-    });
-
-    // 🔥 Auto reload after 2 seconds
-    setTimeout(() => {
-      window.location.reload();
-    }, 2000);
-  } else {
-    setFormMessage({ type: "error", text: data.message || "Failed to send message" });
-  }
-} catch (error) {
-  console.error("Error:", error);
-  setFormMessage({ type: "error", text: "Something went wrong!" });
-}
   };
 
   return (
@@ -177,7 +174,8 @@ const ContactForm = () => {
                     color: "#fff", // arrow color white
                   }}
                 >
-                  ▼
+                  ▼ 8th floor 820, manjeera majestic commercial, KPHB, Hyderabad - 500072., Near
+                  JNTU Signal, KPHB, Hyderabad, Telangana
                 </span>
               </div>
             </div>
@@ -219,9 +217,7 @@ const ContactForm = () => {
           {formMessage.text && (
             <div
               className={`alert mt-20 ${
-                formMessage.type === "success"
-                  ? "alert-success"
-                  : "alert-danger"
+                formMessage.type === "success" ? "alert-success" : "alert-danger"
               }`}
             >
               {formMessage.text}

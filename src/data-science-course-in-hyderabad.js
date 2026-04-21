@@ -9,7 +9,7 @@ const WhatsappApi = () => {
         style={{
           backgroundImage: `url(${images})`,
           height: "100vh",
-          width: "100vh",
+          width: "100%",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -20,6 +20,5 @@ const WhatsappApi = () => {
 };
 
 export default WhatsappApi;
-
 
 

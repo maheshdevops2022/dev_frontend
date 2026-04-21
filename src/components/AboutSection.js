@@ -30,7 +30,7 @@ const Aboutsection = () => {
                 </div>
                 <div className="content">
                   <span>Call Us Now</span>
-                  <span>+91 954 253 5632</span>
+                  <span>+91 961 858 7613</span>
                 </div>
               </div>
             </div>

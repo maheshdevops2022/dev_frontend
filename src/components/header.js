@@ -58,7 +58,7 @@ const Header = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-phone"></i>
-                    <Link to="tel:+919542535632">+91 954 253 5632</Link>
+                    <Link to="tel:+919542535632">+91 961 858 7613</Link>
                   </li>
                 </ul>
               </div>

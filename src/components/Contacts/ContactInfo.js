@@ -21,7 +21,7 @@ const ContactInfo = () => {
                   <div className="content">
                     <h4 className="title">Phone Number</h4>
                     <span>
-                      <a href="tel:+919542535632">+91 954 253 5632</a>
+                      <a href="tel:+919542535632">+91 961 858 7613</a>
                     </span>
                   </div>
                 </div>
@@ -49,9 +49,7 @@ const ContactInfo = () => {
                   <div className="content">
                     <h4 className="title">Address</h4>
                     <span>
-                      MIG 63, 1st floor, Dharma Reddy Colony, Beside ICICI
-                      Bank, Near JNTU Signal, KPHB, Hyderabad, Telangana, India
-                      - 500072
+                     
                     </span>
                   </div>
                 </div>

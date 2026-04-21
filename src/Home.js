@@ -16,13 +16,11 @@ import Testimonials from "./components/Testimonials";
 import TrainingFeatures from "./components/TrainingFeatures";
 //import Footer from './components/footer';
 import { Helmet } from "react-helmet";
-import HomePage from "./components/seo/home/HomePage";
-
 function Home() {
   return (
     <div>
       {/* <Header/> */}
-      <HomePage/>
+      {/* <HomePage/> */}
       <Slider />
       <HomeSection />
       <CoursesSection />

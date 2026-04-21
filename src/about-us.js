@@ -15,13 +15,12 @@ import img from "./assets/img/services/about-us.webp";
 import Aboutsection from "./components/AboutSection";
 import "./assets/css/all.css";
 import { Helmet } from "react-helmet";
-import AboutPage from "./components/seo/about/AboutPage";
 
 function Aboutus() {
   return (
     <div>
       {/* <Header /> */}
-      <AboutPage />
+      {/* <AboutPage /> */}
       {/* Page Header */}
       <section className="page-header">
         <div className="bg-item">

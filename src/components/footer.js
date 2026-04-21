@@ -110,14 +110,14 @@ const Footer = () => {
                 <div className="footer-widget">
                   <h3 className="widget-header">Get in touch!</h3>
                   <p className="mb-10">
-                    MIG 63, 1st floor, Dharma Reddy Colony, Beside ICICI Bank, Near JNTU Signal,
+                    8th floor 820, manjeera majestic commercial, KPHB, Hyderabad - 500072., Near JNTU Signal,
                     KPHB, Hyderabad, Telangana
                   </p>
 
                   <div className="footer-contact mb-10">
                     <span className="number">
                       <i className="fa-solid fa-phone"></i>
-                      <Link to="tel:+919542535632"> +91 954 253 5632</Link>
+                      <Link to="tel:+919542535632"> +91 961 858 7613</Link>
                     </span>
                     <span className="number">
                       <i className="fa-regular fa-envelope"></i>

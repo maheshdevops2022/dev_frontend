@@ -2,15 +2,41 @@ import React, {useState} from "react";
 import "./login.css";
 import bgImage from "./assets/img/login.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [form, setForm] = useState({
+    email: "",
+    password:""
+  });
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setForm({...form, [e.target.name] : e.target.value})
+  }
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("submitted");
+    
+    try {
+      const res = await axios.post("http://localhost:3000/api/auth/login",
+        form
+      )
+
+      console.log(res.data);
+
+      if (res.data.user) {
+        localStorage.setItem("user", JSON.stringify(res.data.user));
+
+        alert("Login success");
+
+        window.location.href = "/contact-us";
+      }
+       
+    } catch(err){
+      alert(err.response?.data?.message || "Login Failed");
+    }
   }
 
 
@@ -22,15 +48,15 @@ function Login() {
         <h4 className="head">Welcome to Dev Infotechs</h4>
         <p className="subtitle">Login to your account</p>
 
-        <form id={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label>Email</label>
-            <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input type="email" name="email" placeholder="Enter your email" onChange={handleChange}/>
           </div>
 
           <div className="input-group">
             <label>Password</label>
-            <input type="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" name="email" placeholder="Enter your password" onChange={handleChange}/>
           </div>
 
           <button className="login-btn">Login</button>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 //import Header from "./components/Header";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import ContactSection from "./components/contact/ContactSection";
-import DevOpsPage from "./components/seo/devops/DevOpsPage";
 import "./assets/css/all.css";
 import "./min.css";
 import { Link } from "react-router-dom";
@@ -39,7 +38,7 @@ const WhatsappSms = () => {
   return (
     <>
       {/* <Header /> */}
-      <DevOpsPage />
+      {/* <DevOpsPage /> */}
       {/* Page Header */}
       <section className="page-header">
         <div className="bg-item">
